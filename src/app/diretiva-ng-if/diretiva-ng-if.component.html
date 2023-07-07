@@ -1,1 +1,24 @@
-<p>diretiva-ng-if works!</p>
+<div class="container">
+    <h1>ngIF</h1>
+
+    <div>
+        <div>
+            <label for="numero">Número:</label>
+            <input type="number" name="numero" [(ngModel)]="numero" id="numero">
+        </div>
+        <div *ngIf="numero > 10">{{numero}}</div>
+    </div>
+</div>
+
+<!--
+<br/><br/>
+<h1>Exemplo ngIf Clavison</h1>
+
+<div class="containerPai">
+    <div *ngIf="containerAmarelo" class="divAmarelo"></div>
+    <div *ngIf="containerVermelho" class="divVermelho"></div>
+</div>
+
+<button (click)="clickAmarelo()">Amarelo</button>
+<button (click)="clickVermelho()">Vermelho</button>
+-->

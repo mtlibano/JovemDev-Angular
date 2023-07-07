@@ -1,1 +1,31 @@
-<p>diretiva-ng-switch works!</p>
+<h1>Exemplo ngSwitch</h1>
+
+<input type="number" [(ngModel)]="opcao" name="opcao">
+<div [ngSwitch]="opcao">
+  <div class="numero" *ngSwitchCase="1" [ngClass]="{preto: true}">
+    <p>Opção 1</p>
+  </div>
+  <div class="numero" *ngSwitchCase="2" [ngClass]="{azul: true}">
+    <p>Opção 2</p>
+  </div>
+  <div class="numero" *ngSwitchCase="3" [ngClass]="{vermelho: true}">
+    <p>Opção 3</p>
+  </div>
+  <div class="numero" *ngSwitchDefault>
+    <p>Nenhuma opção selecionada</p>
+  </div>
+</div>
+
+<!--
+<input type="number" [(ngModel)]="valor">
+<div [ngSwitch]="valor">
+  <p *ngSwitchCase="1"> Domingo</p>
+  <p *ngSwitchCase="2"> Segunda feira</p>
+  <p *ngSwitchCase="3"> Terça feira</p>
+  <p *ngSwitchCase="4"> Quarta feira</p>
+  <p *ngSwitchCase="5"> Quinta feira</p>
+  <p *ngSwitchCase="6"> Sexta feira</p>
+  <p *ngSwitchCase="7"> Sábado</p>
+  <p *ngSwitchDefault> Não representa um dia de semana</p>
+</div>
+-->

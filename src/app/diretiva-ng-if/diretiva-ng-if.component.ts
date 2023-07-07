@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class DiretivaNgIfComponent {
 
+  numero:number = 0;
+
+  containerAmarelo:boolean = false;
+  containerVermelho:boolean = false;
+
+  public clickAmarelo(){
+    this.containerAmarelo = !this.containerAmarelo;
+  }
+  public clickVermelho(){
+    this.containerVermelho = !this.containerVermelho;
+  }
+
 }

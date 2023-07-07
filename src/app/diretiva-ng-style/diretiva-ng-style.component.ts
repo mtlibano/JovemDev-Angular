@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class DiretivaNgStyleComponent {
 
+  progresso: number = 0;
+
+  loading() {
+    this.progresso += 10;
+    if (this.progresso > 100) {
+      this.progresso = 0;
+    }
+  }
+
 }

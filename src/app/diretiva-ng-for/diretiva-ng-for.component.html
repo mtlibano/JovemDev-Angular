@@ -1,1 +1,35 @@
-<p>diretiva-ng-for works!</p>
+<h1>Exemplo ngFor</h1>
+
+<div *ngFor="let item of items">
+  <h3>{{ item.name }}</h3>
+  <p>{{ item.description }}</p>
+</div>
+ 
+<!-- <ul>
+  <li style="margin: 3px;" *ngFor="let pessoa of listaPessoas" (click)="clickPessoa(pessoa)">
+    Nome: {{pessoa.nome}} - Idade: {{pessoa.idade}}</li>
+</ul> -->
+
+<!--
+
+<table border="1" cellSpacing="0" width="30%">
+  <tr>
+    <td align="center"><b>Nome</b></td>
+    <td align="center"><b>Idade</b></td>
+  </tr>
+  <tr *ngFor="let pessoaDaLista of listaPessoas" (click)="clickPessoa(pessoaDaLista)">
+    <td>{{pessoaDaLista.nome}}</td>
+    <td>{{pessoaDaLista.idade}}</td>
+  </tr>
+</table>
+<hr/>
+<button (click)="addPessoa()">Adiciona Pessoa</button>
+<button (click)="removePessoa()">Remove Pessoa</button>
+
+<br>
+<div *ngIf="nomeSelecionado != ''">
+  <h2>{{nomeSelecionado}}</h2>
+  <h2>{{idadeSelecionado}}</h2>
+</div>
+
+-->

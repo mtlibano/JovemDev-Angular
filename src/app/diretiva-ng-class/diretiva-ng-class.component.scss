@@ -1,0 +1,22 @@
+* {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 50px;
+    width: 40%;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+
+.preto {
+    background-color: black;
+    color: aqua;
+    letter-spacing: 30px;
+}
+
+.aqua {
+    background-color: aqua;
+    color: black;
+    letter-spacing: 10px;
+}

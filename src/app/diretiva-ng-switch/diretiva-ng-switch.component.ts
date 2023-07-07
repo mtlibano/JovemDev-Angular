@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class DiretivaNgSwitchComponent {
 
+  public opcao: number = 0;
+  
+  public valor: number = 1;
+
 }
