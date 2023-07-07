@@ -1,0 +1,18 @@
+.linkSelected {
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    border-radius: 15px;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+a:hover, a:active {
+    background-color: red;
+}
