@@ -2,30 +2,28 @@
     <div class="microondas">
         <div class="display">
             <p class="valores">
-                {{ minutos }}
-                :
-                {{ segundos }}
+                {{ displayTime }}
             </p>
         </div>
 
         <div class="numeros">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>+1min</button>
-            <button>+30seg</button>
-            <button>0</button>
+            <button (click)="addTempo(1)">1</button>
+            <button (click)="addTempo(2)">2</button>
+            <button (click)="addTempo(3)">3</button>
+            <button (click)="addTempo(4)">4</button>
+            <button (click)="addTempo(5)">5</button>
+            <button (click)="addTempo(6)">6</button>
+            <button (click)="addTempo(7)">7</button>
+            <button (click)="addTempo(8)">8</button>
+            <button (click)="addTempo(9)">9</button>
+            <button (click)="addMinutos(1)">+1min</button>
+            <button (click)="addSegundos(30)">+30seg</button>
+            <button (click)="addTempo(0)">0</button>
         </div>
 
         <div class="ligar">
-            <button class="btn" id="resetBtn">Cancelar</button>
-            <button class="btn" id="startBtn">Ligar</button>
+            <button class="btnReset" id="btnReset" (click)="resetTimer()" [disabled]="!isReset || selectedTime === 0">Cancelar</button>
+            <button class="btnStart" id="btnStart" (click)="startTimer()" [disabled]="!isStart || selectedTime === 0">Ligar</button>
         </div>
     </div>
 </div>
