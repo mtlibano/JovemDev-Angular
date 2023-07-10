@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
 
+  public menu:String = "none";
+
+  showMenu() {
+    if (this.menu == "none") {
+      this.menu = "flex";
+    } else {
+      this.menu = "none";
+    }
+  }
+    
 }

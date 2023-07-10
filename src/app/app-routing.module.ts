@@ -9,6 +9,7 @@ import { DiretivaNgIfComponent } from './diretiva-ng-if/diretiva-ng-if.component
 import { DiretivaNgForComponent } from './diretiva-ng-for/diretiva-ng-for.component';
 import { DiretivaNgSwitchComponent } from './diretiva-ng-switch/diretiva-ng-switch.component';
 import { ExemploPipesComponent } from './exemplo-pipes/exemplo-pipes.component';
+import { MicroondasComponent } from './microondas/microondas.component';
 
 const routes: Routes = [
   { path: 'exemplo-binding', component: ExemploBindingComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'diretiva-ng-if', component: DiretivaNgIfComponent},
   { path: 'diretiva-ng-for', component: DiretivaNgForComponent},
   { path: 'diretiva-ng-switch', component: DiretivaNgSwitchComponent},
-  { path: 'exemplo-pipes', component: ExemploPipesComponent}
+  { path: 'exemplo-pipes', component: ExemploPipesComponent},
+  { path: 'microondas', component: MicroondasComponent}
 ];
 
 @NgModule({

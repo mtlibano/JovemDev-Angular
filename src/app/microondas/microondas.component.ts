@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MicroondasComponent {
 
+  public minutos:number = 0;
+  public segundos:number = 0;
+
 }

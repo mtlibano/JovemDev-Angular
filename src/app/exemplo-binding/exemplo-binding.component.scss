@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.binding {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;    
+}
