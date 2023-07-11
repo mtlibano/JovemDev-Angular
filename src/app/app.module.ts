@@ -19,6 +19,10 @@ import { ExemploPipesComponent } from './exemplo-pipes/exemplo-pipes.component';
 import { MicroondasComponent } from './microondas/microondas.component';
 import { InvertePipe } from './inverte.pipe';
 import { TemperatureFahrenheitPipe } from './temperature-fahrenheit.pipe';
+import { MdPaiFilhoModule } from './md-pai-filho/md-pai-filho.module';
+import { MdFilhoPaiModule } from './md-filho-pai/md-filho-pai.module';
+import { MdServiceModule } from './md-service/md-service.module';
+import { MdAtvModuloModule } from './md-atv-modulo/md-atv-modulo.module';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { TemperatureFahrenheitPipe } from './temperature-fahrenheit.pipe';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    MdPaiFilhoModule,
+    MdFilhoPaiModule,
+    MdServiceModule,
+    MdAtvModuloModule
   ],
   providers: [],
   bootstrap: [AppComponent]

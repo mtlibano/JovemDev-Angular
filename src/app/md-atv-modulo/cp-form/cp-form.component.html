@@ -1,0 +1,14 @@
+<h1>Form</h1>
+
+<div class="container">
+    <div class="input">
+        <label for="">Medicamento:</label>
+        <input type="text" #inputProp>
+    </div>
+    <div class="input">
+        <label for="">Valor</label>
+        <input type="number" #inputPrice>
+    </div>
+    <button (click)="addItem(inputProp.value, inputPrice.value)" type="submit">Cadastrar</button>
+    {{qt}} Itens Adicionados
+</div>

@@ -10,6 +10,11 @@ import { DiretivaNgForComponent } from './diretiva-ng-for/diretiva-ng-for.compon
 import { DiretivaNgSwitchComponent } from './diretiva-ng-switch/diretiva-ng-switch.component';
 import { ExemploPipesComponent } from './exemplo-pipes/exemplo-pipes.component';
 import { MicroondasComponent } from './microondas/microondas.component';
+import { CpPaiComponent } from './md-pai-filho/cp-pai/cp-pai.component';
+import { CpPaiComponent as CpPaiComponent2 } from './md-filho-pai/cp-pai/cp-pai.component';
+import { CpAComponent } from './md-service/cp-a/cp-a.component';
+import { CpAgrupadorComponent } from './md-service/cp-agrupador/cp-agrupador.component';
+import { CpTelaComponent } from './md-atv-modulo/cp-tela/cp-tela.component';
 
 const routes: Routes = [
   { path: 'exemplo-binding', component: ExemploBindingComponent },
@@ -21,7 +26,12 @@ const routes: Routes = [
   { path: 'diretiva-ng-for', component: DiretivaNgForComponent},
   { path: 'diretiva-ng-switch', component: DiretivaNgSwitchComponent},
   { path: 'exemplo-pipes', component: ExemploPipesComponent},
-  { path: 'microondas', component: MicroondasComponent}
+  { path: 'microondas', component: MicroondasComponent},
+  { path: 'pai-filho', component: CpPaiComponent},
+  { path: 'filho-pai', component: CpPaiComponent2},
+  { path: 'cp-a', component: CpAComponent},
+  { path: 'cp-agrupador', component: CpAgrupadorComponent},
+  { path: 'cp-tela', component: CpTelaComponent}
 ];
 
 @NgModule({
