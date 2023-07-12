@@ -1,12 +1,19 @@
 <div class="container">
     <table>
         <tr class="titulo">
+            <td>ID</td>
             <td>Medicamento</td>
             <td>Valor</td>
         </tr>
-        <tr class="dados" *ngFor="let item of lista" (click)="clickItem(item)">
+        <tr class="dados" *ngFor="let item of lista; let i = index" (click)="clickItem(item)">
+            <td>{{i+1}}</td>
             <td>{{item.nome}}</td>
             <td>{{item.valor}}</td>
+            <!-- <td>
+                <button (click)="deleteItem(i)">
+                    <img src="../../../assets/icons/trash-icon.svg" alt="" />
+                </button>
+            </td> -->
         </tr>
     </table>
 </div>
