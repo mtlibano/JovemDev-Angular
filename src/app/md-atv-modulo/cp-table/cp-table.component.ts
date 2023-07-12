@@ -8,12 +8,16 @@ import { CadastroServiceService } from '../services/cadastro-service.service';
 })
 export class CpTableComponent implements OnInit {
 
-  public lista: Array<string> = [];
+  public lista: any = [];
 
   constructor(private service: CadastroServiceService) {}
 
   ngOnInit(): void {
     this.lista = this.service.getLista();
+  }
+
+  clickItem(medicamento: any): void {
+    this.service.getMedicamento(medicamento);
   }
 
 }

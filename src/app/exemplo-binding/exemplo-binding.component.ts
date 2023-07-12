@@ -28,9 +28,9 @@ export class ExemploBindingComponent {
 
   public alteraImg():string{
     if(this.n1 > 0 ){
-      return "https://i0.wp.com/techwek.com/wp-content/uploads/2020/12/Imagem-para-perfil.jpg?resize=512%2C473&ssl=1";
+      return '../../assets/images/Freakazoid.jpg';
     }
-    return "https://zaplinksbrasil.com.br/wp-content/uploads/2020/12/6ea5239f0d5a6b473b76293b6a17b454.jpg";
+    return '../../assets/images/Freakazoid2.jpg';
   }
 
 }

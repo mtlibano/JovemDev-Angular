@@ -1,9 +1,12 @@
-<br><hr>
-
-<h1>Table</h1>
-
-<ul>
-    <li *ngFor="let item of lista">
-        {{item}}
-    </li>
-</ul>
+<div class="container">
+    <table>
+        <tr class="titulo">
+            <td>Medicamento</td>
+            <td>Valor</td>
+        </tr>
+        <tr class="dados" *ngFor="let item of lista" (click)="clickItem(item)">
+            <td>{{item.nome}}</td>
+            <td>{{item.valor}}</td>
+        </tr>
+    </table>
+</div>

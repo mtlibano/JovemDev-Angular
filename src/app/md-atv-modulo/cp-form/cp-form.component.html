@@ -1,14 +1,16 @@
-<h1>Form</h1>
-
 <div class="container">
-    <div class="input">
-        <label for="">Medicamento:</label>
-        <input type="text" #inputProp>
+    <div class="form">
+        <h1>Cadastrar</h1>
+        <div class="inputBox">
+            <input type="text" id="nome" [(ngModel)]="nomeMed"  #inputProp>
+            <span>Medicamento</span>
+        </div>
+        <div class="inputBox">
+            <input type="number" id="valor" [(ngModel)]="valorMed" #inputPrice >
+            <span>Preço</span>
+        </div>
+
+        <button (click)="addItem(inputProp.value, inputPrice.value)" type="submit">Salvar</button>
+
     </div>
-    <div class="input">
-        <label for="">Valor</label>
-        <input type="number" #inputPrice>
-    </div>
-    <button (click)="addItem(inputProp.value, inputPrice.value)" type="submit">Cadastrar</button>
-    {{qt}} Itens Adicionados
 </div>
