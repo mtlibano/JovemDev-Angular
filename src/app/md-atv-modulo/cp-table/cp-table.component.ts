@@ -20,4 +20,8 @@ export class CpTableComponent implements OnInit {
     this.service.getMedicamento(medicamento);
   }
 
+  deleteItem(event: number): void {
+    this.service.removeItem(event);    
+  }
+
 }

@@ -33,6 +33,10 @@ export class CadastroServiceService {
     this.emitValor.emit(this.valorMed);
   }
 
+  public removeItem(event: number) {
+    return this.medicamentos.splice(event, 1);
+  }
+
   constructor() { }
 
 }

@@ -4,16 +4,17 @@
             <td>ID</td>
             <td>Medicamento</td>
             <td>Valor</td>
+            <td></td>
         </tr>
         <tr class="dados" *ngFor="let item of lista; let i = index" (click)="clickItem(item)">
             <td>{{i+1}}</td>
             <td>{{item.nome}}</td>
             <td>{{item.valor}}</td>
-            <!-- <td>
+            <td class="td-btn">
                 <button (click)="deleteItem(i)">
                     <img src="../../../assets/icons/trash-icon.svg" alt="" />
                 </button>
-            </td> -->
+            </td>
         </tr>
     </table>
 </div>
